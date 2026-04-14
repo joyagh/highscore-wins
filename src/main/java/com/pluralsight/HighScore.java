@@ -16,6 +16,10 @@ public class HighScore {
         String[] team = score[0].split(":");
         String[] totalScores = score[1].split(":");
 
+        String home = team[0];
+        String visitor = team[1];
+
+
 
 
 
