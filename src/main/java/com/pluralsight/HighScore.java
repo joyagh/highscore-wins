@@ -9,6 +9,8 @@ public class HighScore {
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
+        System.out.println("Welcome to the high score calculator!");
+        System.out.println("When using this calculator, you will enter scores in this format: Team:Team|Score:Score");
         System.out.print("Please enter scores: ");
         String highScore = input.nextLine().toUpperCase();
 
