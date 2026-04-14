@@ -29,6 +29,8 @@ public class HighScore {
             System.out.println("The winner is: " + home);
         } else if (visitorScore > scoreHome) {
             System.out.println("The winner is: " + visitors );
+        } else {
+            System.out.println("Its a tie!");
         }
 
 
