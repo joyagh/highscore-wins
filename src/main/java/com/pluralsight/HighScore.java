@@ -10,7 +10,7 @@ public class HighScore {
 
         Scanner input = new Scanner(System.in);
         System.out.print("Please enter scores: ");
-        String highScore = input.next().toUpperCase();
+        String highScore = input.nextLine().toUpperCase();
 
         String[] score = highScore.split(Pattern.quote("|").trim());
         String[] team = score[0].split(":");
@@ -19,8 +19,8 @@ public class HighScore {
         String home = team[0];
         String visitors = team[1];
 
-        int scoreHome = Integer.parseInt(totalScores[0]);
-        int visitorScore = Integer.parseInt(totalScores[1]);
+        int scoreHome = Integer.parseInt(totalScores[0].trim());
+        int visitorScore = Integer.parseInt(totalScores[1].trim());
 
 
         if (scoreHome > visitorScore){
